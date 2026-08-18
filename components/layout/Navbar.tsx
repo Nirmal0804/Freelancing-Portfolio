@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "@/components/ui/Icons";
@@ -16,6 +17,11 @@ const NAV_LINKS = [
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -88,12 +94,12 @@ export const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Right Slide-Over Drawer Menu (75vw with 25% blurred backdrop) */}
-      {mobileMenuOpen && (
-        <div className="md:hidden">
-          {/* Heavily Blurred & Darkened Backdrop covering existing page */}
+      {/* Mobile Right Slide-Over Drawer Menu (Portaled to body to escape sticky nav stacking context) */}
+      {mounted && mobileMenuOpen && createPortal(
+        <div className="md:hidden fixed inset-0 z-[9999]">
+          {/* Heavily Blurred & Darkened Full Page Backdrop */}
           <div
-            className="fixed inset-0 bg-black/40 z-[90] transition-opacity duration-300"
+            className="fixed inset-0 bg-black/40 z-[9998] transition-opacity duration-300"
             style={{
               backdropFilter: "blur(16px)",
               WebkitBackdropFilter: "blur(16px)",
@@ -102,8 +108,8 @@ export const Navbar: React.FC = () => {
             aria-hidden="true"
           />
 
-          {/* Solid 75vw Slide-Over Drawer Panel */}
-          <div className="fixed top-0 right-0 bottom-0 w-[75vw] max-w-[320px] bg-[#fcf9f8] border-l border-[#cdc5c2] shadow-2xl z-[100] flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
+          {/* 100% Solid 75vw Slide-Over Drawer Panel */}
+          <div className="fixed top-0 right-0 bottom-0 w-[75vw] max-w-[320px] bg-[#fcf9f8] border-l border-[#cdc5c2] shadow-2xl z-[9999] flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
             <div>
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-5 border-b border-[#cdc5c2]">
@@ -123,7 +129,7 @@ export const Navbar: React.FC = () => {
                 </button>
               </div>
 
-              {/* Navigation Links (Clean Uppercase) */}
+              {/* Navigation Links */}
               <nav className="flex flex-col gap-5 pt-8 font-heading text-base">
                 {NAV_LINKS.map((link) => {
                   const isActive = pathname === link.href;
@@ -166,7 +172,8 @@ export const Navbar: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </nav>
   );
