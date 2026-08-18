@@ -2,37 +2,45 @@ import React from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "@/components/ui/Icons";
 
-const SERVICES_PREVIEW = [
+interface ServiceColumn {
+  number: string;
+  title: string;
+  price: string;
+  description: string;
+  href: string;
+}
+
+const SERVICES: ServiceColumn[] = [
   {
     number: "01",
     title: "WEB DEVELOPMENT",
-    description:
-      "Websites built around your business, with responsive layouts, strong performance, and a polished user experience.",
     price: "₹4,499+",
+    description:
+      "Modern responsive websites built for performance, usability, SEO, custom functionality, and future growth. Full-stack and AI integrations can be added when required.",
     href: "/services",
   },
   {
     number: "02",
     title: "WEB DESIGN",
-    description:
-      "Thoughtful interfaces and visual systems designed around your brand and audience.",
     price: "₹1,499+",
+    description:
+      "Clean, modern interface design focused on clarity, visual hierarchy, responsive layouts, and a polished user experience.",
     href: "/services",
   },
   {
     number: "03",
     title: "LOGO DESIGN",
-    description:
-      "Simple, memorable visual identities that give your brand a distinct character.",
     price: "₹199+",
+    description:
+      "Simple, distinctive visual identities designed to give businesses a clean and memorable brand presence.",
     href: "/services",
   },
   {
     number: "04",
     title: "PORTFOLIO DEVELOPMENT",
-    description:
-      "Personal portfolios designed to present your work, skills, and personality professionally.",
     price: "₹1,499+",
+    description:
+      "Personal portfolios designed and developed to present your work, skills, and identity professionally online.",
     href: "/services",
   },
 ];
@@ -40,85 +48,62 @@ const SERVICES_PREVIEW = [
 export const ServicesPreview: React.FC = () => {
   return (
     <section
-      className="w-full border-b border-[#E5E2E1] grid grid-cols-1 md:grid-cols-12 bg-surface-container-lowest"
+      className="w-full border-b border-[#E5E2E1] bg-surface-container-lowest"
       id="services"
     >
-      {/* Left Column: Heading */}
-      <div className="md:col-span-4 p-6 sm:p-8 lg:p-10 border-b md:border-b-0 md:border-r border-[#E5E2E1]">
-        <h2 className="font-sans font-semibold text-xs uppercase text-on-surface-variant sticky top-28 tracking-wider">
-          Services
+      {/* Editorial Section Header - Centered Warm Orange */}
+      <div className="p-6 sm:p-8 lg:p-12 border-b border-[#E5E2E1] flex justify-center items-center text-center">
+        <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
+          WHAT I CAN HELP YOU WITH
         </h2>
       </div>
 
-      {/* Right Column: 2x2 Services Grid */}
-      <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-[#E5E2E1]">
-        {/* Column 1: Items 01 & 03 */}
-        <div className="flex flex-col divide-y divide-[#E5E2E1]">
-          {[SERVICES_PREVIEW[0], SERVICES_PREVIEW[2]].map((service) => (
-            <Link
-              key={service.number}
-              href={service.href}
-              className="p-6 sm:p-8 lg:p-10 hover:bg-primary/5 transition-colors group flex flex-col justify-between min-h-[280px]"
-            >
-              <div>
-                <div className="flex justify-between items-start mb-6">
-                  <span className="font-heading text-sm font-semibold text-primary">
-                    {service.number}
-                  </span>
-                  <ArrowUpRight className="w-4 h-4 text-on-surface-variant group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
-                </div>
-                <h3 className="font-heading text-lg md:text-xl text-on-surface uppercase mb-2 font-semibold tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-[#E5E2E1]/60">
-                <span className="font-sans text-xs text-on-surface-variant uppercase tracking-wider">
-                  Starting from{" "}
-                  <span className="font-heading text-sm text-on-surface font-semibold">
-                    {service.price}
-                  </span>
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
+      {/* 4-Column Continuous Editorial Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 divide-[#E5E2E1]">
+        {SERVICES.map((service, idx) => (
+          <Link
+            key={service.number}
+            href={service.href}
+            className={`group p-6 sm:p-8 lg:p-10 flex flex-col justify-between hover:bg-primary/[0.03] transition-colors duration-200 min-h-[380px] lg:min-h-[440px] ${
+              idx !== 0 ? "lg:border-l border-[#E5E2E1]" : ""
+            } ${idx % 2 === 1 ? "md:border-l lg:border-l-0" : ""} ${
+              idx >= 2 ? "md:border-t lg:border-t-0" : ""
+            }`}
+          >
+            {/* Top / Main Column Content */}
+            <div className="flex flex-col flex-grow">
+              {/* Large Subtle Editorial Number */}
+              <span className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-on-surface/25 select-none tracking-tighter leading-none mb-6 group-hover:text-primary/40 transition-colors duration-200">
+                {service.number}
+              </span>
 
-        {/* Column 2: Items 02 & 04 */}
-        <div className="flex flex-col divide-y divide-[#E5E2E1]">
-          {[SERVICES_PREVIEW[1], SERVICES_PREVIEW[3]].map((service) => (
-            <Link
-              key={service.number}
-              href={service.href}
-              className="p-6 sm:p-8 lg:p-10 hover:bg-primary/5 transition-colors group flex flex-col justify-between min-h-[280px]"
-            >
-              <div>
-                <div className="flex justify-between items-start mb-6">
-                  <span className="font-heading text-sm font-semibold text-primary">
-                    {service.number}
-                  </span>
-                  <ArrowUpRight className="w-4 h-4 text-on-surface-variant group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
-                </div>
-                <h3 className="font-heading text-lg md:text-xl text-on-surface uppercase mb-2 font-semibold tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-[#E5E2E1]/60">
-                <span className="font-sans text-xs text-on-surface-variant uppercase tracking-wider">
-                  Starting from{" "}
-                  <span className="font-heading text-sm text-on-surface font-semibold">
-                    {service.price}
-                  </span>
+              {/* Service Name */}
+              <h3 className="font-heading text-lg sm:text-xl text-on-surface uppercase font-semibold tracking-tight mb-4 leading-snug group-hover:text-primary transition-colors duration-200">
+                {service.title}
+              </h3>
+
+              {/* Client-Focused Description */}
+              <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+
+            {/* Bottom Footer: Price & Arrow */}
+            <div className="mt-8 pt-5 border-t border-[#E5E2E1]/70 flex items-end justify-between gap-2">
+              <div className="flex flex-col">
+                <span className="font-sans text-[11px] text-on-surface-variant uppercase tracking-wider mb-0.5">
+                  Starting at
+                </span>
+                <span className="font-heading text-base font-semibold text-on-surface">
+                  {service.price}
                 </span>
               </div>
-            </Link>
-          ))}
-        </div>
+              <div className="w-8 h-8 rounded-full border border-[#E5E2E1] flex items-center justify-center text-on-surface-variant group-hover:border-primary group-hover:text-primary transition-all duration-200 shrink-0 mb-0.5">
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </section>
   );
