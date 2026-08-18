@@ -30,9 +30,10 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
                   src={project.image}
                   alt={project.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 55vw"
+                  quality={95}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 850px"
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                  priority={idx === 0}
+                  priority={idx < 2}
                 />
               </div>
 
