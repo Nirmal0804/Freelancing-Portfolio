@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight } from "@/components/ui/Icons";
+import { ArrowUpRight, Instagram, Linkedin, Github } from "@/components/ui/Icons";
 
 export const Footer: React.FC = () => {
   return (
@@ -42,35 +42,35 @@ export const Footer: React.FC = () => {
           <h5 className="font-sans font-semibold text-xs uppercase text-on-surface-variant tracking-wider">
             Social
           </h5>
-          <nav className="flex flex-col gap-2.5 font-sans text-sm">
+          <div className="flex items-center gap-3.5 pt-1">
             <a
               href="https://www.instagram.com/crafted_webs/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-on-surface hover:text-primary transition-colors flex items-center gap-1 group"
+              aria-label="Instagram"
+              className="w-10 h-10 rounded-full border border-[#cdc5c2] flex items-center justify-center text-on-surface hover:border-primary hover:text-primary hover:bg-primary/[0.04] hover:-translate-y-0.5 transition-all duration-200 shrink-0"
             >
-              <span>Instagram</span>
-              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              <Instagram className="w-4.5 h-4.5" />
             </a>
             <a
               href="https://www.linkedin.com/in/nirmal-p-44645a326/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-on-surface hover:text-primary transition-colors flex items-center gap-1 group"
+              aria-label="LinkedIn"
+              className="w-10 h-10 rounded-full border border-[#cdc5c2] flex items-center justify-center text-on-surface hover:border-primary hover:text-primary hover:bg-primary/[0.04] hover:-translate-y-0.5 transition-all duration-200 shrink-0"
             >
-              <span>LinkedIn</span>
-              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              <Linkedin className="w-4.5 h-4.5" />
             </a>
             <a
               href="https://github.com/Nirmal0804"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-on-surface hover:text-primary transition-colors flex items-center gap-1 group"
+              aria-label="GitHub"
+              className="w-10 h-10 rounded-full border border-[#cdc5c2] flex items-center justify-center text-on-surface hover:border-primary hover:text-primary hover:bg-primary/[0.04] hover:-translate-y-0.5 transition-all duration-200 shrink-0"
             >
-              <span>GitHub</span>
-              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              <Github className="w-4.5 h-4.5" />
             </a>
-          </nav>
+          </div>
         </div>
 
         {/* Column 4: Contact */}
