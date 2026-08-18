@@ -90,8 +90,8 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-background border-t border-[#cdc5c2] flex flex-col justify-between p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-          <div className="flex flex-col gap-5 pt-4 font-sans text-base">
+        <div className="md:hidden fixed inset-x-0 top-20 h-[calc(100dvh-5rem)] bg-background border-t border-[#cdc5c2] flex flex-col justify-between p-6 sm:p-8 z-50 overflow-y-auto">
+          <div className="flex flex-col pt-2 font-heading">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -99,8 +99,8 @@ export const Navbar: React.FC = () => {
                   key={link.name}
                   href={link.href}
                   className={cn(
-                    "py-3 border-b border-[#cdc5c2]/60 transition-colors flex items-center justify-between font-medium",
-                    isActive ? "text-primary font-semibold" : "text-on-surface hover:text-primary"
+                    "py-4 border-b border-[#cdc5c2] transition-colors flex items-center justify-between text-base font-semibold uppercase tracking-wider",
+                    isActive ? "text-primary font-bold" : "text-on-surface hover:text-primary"
                   )}
                 >
                   <span>{link.name}</span>
@@ -110,7 +110,7 @@ export const Navbar: React.FC = () => {
             })}
           </div>
 
-          <div className="pt-8 pb-10 flex flex-col gap-4">
+          <div className="pt-8 pb-8 flex flex-col gap-4 mt-auto">
             <Link
               href="/contact"
               className="w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-sans font-medium text-xs uppercase tracking-wider py-3.5 border border-primary hover:bg-transparent hover:text-primary transition-colors"
