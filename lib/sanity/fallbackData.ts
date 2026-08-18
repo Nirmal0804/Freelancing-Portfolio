@@ -20,7 +20,7 @@ export const fallbackProjects: Project[] = [
       "A sophisticated digital presence for a premium dining establishment, focusing on reservation flow and visual storytelling through immersive photography.",
     services: ["Web Design", "Web Development"],
     liveUrl: "https://restaurent-web-five.vercel.app",
-    image: "/images/ember-and-bean.jpg",
+    image: "/images/ember-and-bean.png",
     alt: "A high-end, editorial website preview for a modern restaurant named EMBER & BEAN.",
   },
   {
@@ -32,7 +32,7 @@ export const fallbackProjects: Project[] = [
       "An elegant e-commerce platform designed for an independent fashion label. The focus was on creating a seamless shopping experience with large imagery and refined typography.",
     services: ["Web Design", "Web Development"],
     liveUrl: "https://sol-clothing.vercel.app",
-    image: "/images/sol-clothing.jpg",
+    image: "/images/sol-clothing.png",
     alt: "A clean, minimalist e-commerce website preview for a fashion brand named SOL CLOTHING.",
   },
   {
@@ -44,7 +44,7 @@ export const fallbackProjects: Project[] = [
       "A high-energy digital platform for a modern fitness center, highlighting class schedules, membership tiers, and trainer profiles within a structured, impactful layout.",
     services: ["Web Design", "Web Development"],
     liveUrl: "https://apex-gym-web.vercel.app",
-    image: "/images/apex-fitness.jpg",
+    image: "/images/apex-fitness.png",
     alt: "A dynamic and bold website preview for a gym named APEX FITNESS.",
   },
 ];
