@@ -52,16 +52,25 @@ export const WhyCraftedWeb: React.FC = () => {
         </h2>
       </div>
 
-      {/* 3-Column × 2-Row Continuous Editorial Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 divide-[#E5E2E1]">
+      {/* 6-Point Structured Editorial Grid with Clean Separators */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {PILLARS.map((pillar, idx) => (
           <div
             key={pillar.number}
             className={`group p-6 sm:p-8 lg:p-10 flex flex-col justify-between hover:bg-primary/[0.03] transition-colors duration-200 min-h-[220px] lg:min-h-[250px] ${
-              idx % 3 !== 0 ? "lg:border-l border-[#E5E2E1]" : ""
-            } ${idx >= 3 ? "lg:border-t border-[#E5E2E1]" : ""} ${
-              idx % 2 === 1 ? "md:border-l lg:border-l-0" : ""
-            } ${idx >= 2 ? "md:border-t lg:border-t-0" : ""}`}
+              /* Mobile bottom borders for items 0-4 */
+              idx < 5 ? "border-b border-[#E5E2E1] sm:border-b-0" : ""
+            } ${
+              /* Tablet 2-column borders */
+              idx % 2 === 0 ? "sm:border-r border-[#E5E2E1] lg:border-r-0" : ""
+            } ${
+              idx < 4 ? "sm:border-b border-[#E5E2E1] lg:border-b-0" : ""
+            } ${
+              /* Desktop 3-column borders */
+              idx % 3 !== 2 ? "lg:border-r border-[#E5E2E1]" : ""
+            } ${
+              idx < 3 ? "lg:border-b border-[#E5E2E1]" : ""
+            }`}
           >
             <div>
               <span className="font-heading text-sm font-semibold text-primary block mb-2 group-hover:text-primary transition-colors">
