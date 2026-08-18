@@ -32,7 +32,7 @@ export const HeroSection: React.FC = () => {
             {/* Secondary Identity (Small Supporting Metadata) */}
             <div className="font-sans text-xs sm:text-sm font-semibold tracking-wider uppercase text-on-surface/80 leading-snug">
               <span className="block">THIRD-YEAR COMPUTER SCIENCE STUDENT</span>
-              <span className="block">&amp; FOUNDER OF CRAFTED WEB</span>
+              <span className="block">&amp; THE PERSON BEHIND CRAFTED WEB</span>
             </div>
 
             {/* Vertical Separator for Desktop */}
@@ -50,13 +50,13 @@ export const HeroSection: React.FC = () => {
 
         {/* Right Column: Oval Arch Framed Portrait */}
         <div className="lg:col-span-5 xl:col-span-4 flex justify-center lg:justify-end items-center">
-          <div className="relative w-[230px] sm:w-[270px] md:w-[300px] lg:w-[320px] xl:w-[340px] aspect-[3/4] rounded-full overflow-hidden border-[6px] sm:border-8 border-white ring-1 ring-[#cdc5c2] shadow-lg bg-surface-container-low shrink-0">
+          <div className="relative w-[270px] sm:w-[320px] md:w-[360px] lg:w-[400px] xl:w-[440px] aspect-[3/4] rounded-full overflow-hidden border-[6px] sm:border-8 border-white ring-1 ring-[#cdc5c2] shadow-lg bg-surface-container-low shrink-0">
             <Image
               src="/images/nirmal-portrait.jpg"
-              alt="Portrait of Nirmal — Web Designer, Developer & Founder of Crafted Web"
+              alt="Portrait of Nirmal — Web Designer, Developer & The Person Behind Crafted Web"
               fill
               priority
-              sizes="(max-width: 768px) 270px, (max-width: 1024px) 320px, 340px"
+              sizes="(max-width: 768px) 320px, (max-width: 1024px) 400px, 440px"
               className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 ease-out"
             />
           </div>
