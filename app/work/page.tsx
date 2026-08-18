@@ -15,7 +15,7 @@ export default async function WorkPage() {
   const projects = await getProjects();
 
   return (
-    <PageContainer usePadding className="py-12 sm:py-16 lg:py-20 flex flex-col">
+    <PageContainer usePadding className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-12 lg:pb-16 flex flex-col">
       {/* Introductory Header - Centered Warm Orange */}
       <header className="mb-14 sm:mb-20 lg:mb-24 w-full flex flex-col items-center justify-center text-center max-w-3xl mx-auto gap-4">
         <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
@@ -29,8 +29,11 @@ export default async function WorkPage() {
       {/* Projects Showcase */}
       <ProjectSection projects={projects} />
 
-      {/* Bottom CTA */}
-      <section className="mt-24 sm:mt-32 lg:mt-40 mb-8 sm:mb-12 text-center max-w-3xl mx-auto flex flex-col items-center gap-4 sm:gap-6">
+      {/* Thin Editorial Divider below final project (Apex Gym) */}
+      <div className="w-full border-b border-[#E5E2E1] mt-16 sm:mt-20 lg:mt-24" />
+
+      {/* Bottom CTA with Refined Editorial Vertical Spacing */}
+      <section className="pt-12 sm:pt-16 lg:pt-20 pb-4 sm:pb-6 text-center max-w-3xl mx-auto flex flex-col items-center gap-4 sm:gap-6">
         <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl text-on-surface font-semibold uppercase tracking-tight">
           LIKE WHAT YOU SEE?
         </h2>
