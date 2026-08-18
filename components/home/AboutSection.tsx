@@ -13,9 +13,12 @@ export const AboutSection: React.FC = () => {
         </h2>
       </div>
       <div className="md:col-span-12 p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row gap-8 lg:gap-12 items-start justify-between">
-        <div className="flex-1 order-1 max-w-3xl">
-          <p className="font-heading text-2xl sm:text-3xl lg:text-4xl text-on-surface font-semibold leading-snug tracking-tight">
-            Crafted Web is an independent digital studio founded by Nirmal, focused on delivering high-end, bespoke web solutions for creatives and ambitious brands.
+        <div className="flex-1 order-1 max-w-3xl flex flex-col gap-6">
+          <p className="font-heading text-xl sm:text-2xl lg:text-3xl text-on-surface font-semibold leading-snug tracking-tight">
+            I&apos;m Nirmal, a third-year Computer Science student and the person behind Crafted Web. I design and develop thoughtful digital experiences for creatives, businesses, and ambitious brands.
+          </p>
+          <p className="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed">
+            I enjoy bringing together clean design, purposeful development, and emerging technology to create websites that not only look refined but work beautifully. Crafted Web is where I turn that passion into digital experiences built with intention.
           </p>
         </div>
         <div className="w-full sm:w-56 md:w-60 lg:w-64 shrink-0 order-2">
