@@ -143,30 +143,30 @@ export const ContactForm: React.FC = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-[#E5E2E1] border border-[#E5E2E1] bg-background">
-      {/* Left Column: Contact Details */}
-      <div className="md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between space-y-10 bg-surface-container-low/40">
+      {/* Left Column: Contact Details (Warm Orange Accent Panel) */}
+      <div className="md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between space-y-10 bg-primary text-white">
         <div className="space-y-10">
           {/* Direct Channels */}
           <div>
-            <h2 className="font-sans font-semibold text-xs text-on-surface-variant mb-4 uppercase tracking-wider">
+            <h2 className="font-sans font-semibold text-xs text-white/80 mb-4 uppercase tracking-wider">
               LET&apos;S TALK
             </h2>
             <ul className="space-y-3 font-sans text-sm">
               <li>
                 <a
                   href="mailto:craftedweb@zohomail.in"
-                  className="text-on-surface hover:text-primary transition-colors flex items-center group gap-2.5"
+                  className="text-white hover:text-white/80 transition-colors flex items-center group gap-2.5"
                 >
-                  <Mail className="w-4 h-4 text-on-surface-variant group-hover:text-primary transition-colors shrink-0" />
+                  <Mail className="w-4 h-4 text-white group-hover:text-white/80 transition-colors shrink-0" />
                   <span className="break-all">craftedweb@zohomail.in</span>
                 </a>
               </li>
               <li>
                 <a
                   href="tel:+916385626810"
-                  className="text-on-surface hover:text-primary transition-colors flex items-center group gap-2.5"
+                  className="text-white hover:text-white/80 transition-colors flex items-center group gap-2.5"
                 >
-                  <Phone className="w-4 h-4 text-on-surface-variant group-hover:text-primary transition-colors shrink-0" />
+                  <Phone className="w-4 h-4 text-white group-hover:text-white/80 transition-colors shrink-0" />
                   <span>6385626810</span>
                 </a>
               </li>
@@ -175,19 +175,19 @@ export const ContactForm: React.FC = () => {
 
           {/* Social */}
           <div>
-            <h2 className="font-sans font-semibold text-xs text-on-surface-variant mb-4 uppercase tracking-wider">
+            <h2 className="font-sans font-semibold text-xs text-white/80 mb-4 uppercase tracking-wider">
               SOCIAL
             </h2>
-            <ul className="space-y-3 font-sans text-sm text-on-surface">
+            <ul className="space-y-3 font-sans text-sm text-white">
               <li>
                 <a
                   href="https://www.instagram.com/crafted_webs/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors inline-flex items-center gap-1.5 group"
+                  className="text-white hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
                 >
                   <span>Instagram</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               </li>
               <li>
@@ -195,10 +195,10 @@ export const ContactForm: React.FC = () => {
                   href="https://www.linkedin.com/in/nirmal-p-44645a326/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors inline-flex items-center gap-1.5 group"
+                  className="text-white hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
                 >
                   <span>LinkedIn</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               </li>
               <li>
@@ -206,17 +206,17 @@ export const ContactForm: React.FC = () => {
                   href="https://github.com/Nirmal0804"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors inline-flex items-center gap-1.5 group"
+                  className="text-white hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
                 >
                   <span>GitHub</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-6 border-t border-[#E5E2E1]/60 font-sans text-xs text-on-surface-variant">
+        <div className="pt-6 border-t border-white/20 font-sans text-xs text-white/90">
           <p>
             Usually responding within 24 hours on business days.
           </p>
