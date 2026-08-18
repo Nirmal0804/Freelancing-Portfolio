@@ -42,9 +42,9 @@ const PILLARS = [
 export const WhyCraftedWeb: React.FC = () => {
   return (
     <section className="w-full border-b border-[#E5E2E1] bg-surface-container-highest">
-      <div className="p-6 sm:p-8 lg:p-10 border-b border-[#E5E2E1]">
-        <h2 className="font-sans font-semibold text-xs uppercase text-on-surface-variant tracking-wider">
-          Why Crafted Web
+      <div className="p-6 sm:p-8 lg:p-12 border-b border-[#E5E2E1] flex justify-center items-center text-center">
+        <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
+          WHY CRAFTED WEB
         </h2>
       </div>
 

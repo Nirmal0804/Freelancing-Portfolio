@@ -7,9 +7,9 @@ export const AboutSection: React.FC = () => {
       className="w-full border-b border-[#E5E2E1] grid grid-cols-1 md:grid-cols-12 bg-surface-container-highest"
       id="about"
     >
-      <div className="md:col-span-12 p-6 sm:p-8 lg:p-10 border-b border-[#E5E2E1]">
-        <h2 className="font-sans font-semibold text-xs uppercase text-on-surface-variant tracking-wider">
-          About
+      <div className="md:col-span-12 p-6 sm:p-8 lg:p-12 border-b border-[#E5E2E1] flex justify-center items-center text-center">
+        <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
+          ABOUT ME
         </h2>
       </div>
       <div className="md:col-span-12 p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row gap-8 lg:gap-12 items-start justify-between">
