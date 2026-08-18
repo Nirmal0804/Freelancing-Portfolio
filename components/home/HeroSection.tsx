@@ -10,17 +10,21 @@ export const HeroSection: React.FC = () => {
       <div className="w-full max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         {/* Left Column: Greeting, Main Identity, Supporting Copy & Metadata */}
         <div className="lg:col-span-7 xl:col-span-8 flex flex-col items-start gap-6 sm:gap-8 text-left">
-          {/* 1. Greeting */}
-          <h1 className="font-serif italic font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-surface tracking-tight leading-none select-none">
+          {/* 1. Greeting (Shifted slightly upward) */}
+          <h1 className="font-serif italic font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-surface tracking-tight leading-none select-none -mb-1 sm:-mb-2 lg:-mt-2">
             Hey, there.
           </h1>
 
-          {/* 2. Main Identity (Sora Bold/Black Heading) */}
-          <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-on-surface uppercase tracking-tight leading-[0.92]">
-            <span className="block">I&apos;M NIRMAL.</span>
-            <span className="block">A WEB DESIGNER</span>
-            <span className="block">&amp; DEVELOPER.</span>
-          </h2>
+          {/* 2. Main Identity: Separated Name & Role with proper breathing room */}
+          <div className="flex flex-col gap-2.5 sm:gap-3.5">
+            <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-on-surface uppercase tracking-tight leading-none">
+              I&apos;M NIRMAL.
+            </h2>
+            <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-on-surface uppercase tracking-tight leading-[0.95]">
+              <span className="block">A WEB DESIGNER</span>
+              <span className="block">&amp; DEVELOPER.</span>
+            </h2>
+          </div>
 
           {/* 3. Supporting Paragraph (Heebo Normal Body Text) */}
           <p className="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-xl">
