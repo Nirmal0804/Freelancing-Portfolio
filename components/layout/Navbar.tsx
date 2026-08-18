@@ -88,41 +88,78 @@ export const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Right Slide-Over Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-20 h-[calc(100dvh-5rem)] bg-background border-t border-[#cdc5c2] flex flex-col justify-between p-6 sm:p-8 z-50 overflow-y-auto">
-          <div className="flex flex-col pt-2 font-heading">
-            {NAV_LINKS.map((link) => {
-              const isActive = pathname === link.href;
-              return (
+        <div className="md:hidden">
+          {/* Dimmed Backdrop */}
+          <div
+            className="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 transition-opacity"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
+
+          {/* Slide-over Drawer Panel */}
+          <div className="fixed top-0 right-0 bottom-0 w-[82%] max-w-[340px] bg-background border-l border-[#cdc5c2] shadow-2xl z-50 flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
+            <div>
+              {/* Drawer Header */}
+              <div className="flex items-center justify-between pb-5 border-b border-[#cdc5c2]">
                 <Link
-                  key={link.name}
-                  href={link.href}
-                  className={cn(
-                    "py-4 border-b border-[#cdc5c2] transition-colors flex items-center justify-between text-base font-semibold uppercase tracking-wider",
-                    isActive ? "text-primary font-bold" : "text-on-surface hover:text-primary"
-                  )}
+                  href="/"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="font-heading text-lg font-semibold text-on-surface uppercase tracking-tight hover:text-primary transition-colors"
                 >
-                  <span>{link.name}</span>
-                  {isActive && <span className="w-2 h-2 rounded-full bg-primary" />}
+                  Crafted Web
                 </Link>
-              );
-            })}
-          </div>
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="p-1.5 -mr-1 text-on-surface hover:text-primary transition-colors focus:outline-none"
+                  aria-label="Close menu"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
 
-          <div className="pt-8 pb-8 flex flex-col gap-4 mt-auto">
-            <Link
-              href="/contact"
-              className="w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-sans font-medium text-xs uppercase tracking-wider py-3.5 border border-primary hover:bg-transparent hover:text-primary transition-colors"
-            >
-              <span>Let&apos;s Talk</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
+              {/* Navigation Links */}
+              <nav className="flex flex-col gap-6 pt-8 font-sans text-base">
+                {NAV_LINKS.map((link) => {
+                  const isActive = pathname === link.href;
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={cn(
+                        "transition-colors font-medium flex items-center justify-between text-base py-0.5",
+                        isActive ? "text-primary font-semibold" : "text-on-surface hover:text-primary"
+                      )}
+                    >
+                      <span>{link.name}</span>
+                      {isActive && <span className="w-1.5 h-1.5 rounded-full bg-primary" />}
+                    </Link>
+                  );
+                })}
+              </nav>
+            </div>
 
-            <div className="text-center font-sans text-xs text-on-surface-variant pt-2">
-              <a href="mailto:craftedweb@zohomail.in" className="hover:text-primary transition-colors">
-                craftedweb@zohomail.in
-              </a>
+            {/* Drawer Footer */}
+            <div className="pt-6 border-t border-[#cdc5c2] flex flex-col gap-4">
+              <Link
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full inline-flex items-center justify-center gap-2 bg-on-surface text-background font-sans font-medium text-xs uppercase tracking-wider py-3.5 border border-on-surface hover:bg-primary hover:border-primary hover:text-white transition-colors"
+              >
+                <span>Let&apos;s Talk</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+
+              <div className="flex flex-col gap-1 text-center font-sans text-xs text-on-surface-variant pt-1">
+                <a href="tel:+916385626810" className="hover:text-primary transition-colors">
+                  +91 6385626810
+                </a>
+                <a href="mailto:craftedweb@zohomail.in" className="hover:text-primary transition-colors">
+                  craftedweb@zohomail.in
+                </a>
+              </div>
             </div>
           </div>
         </div>
