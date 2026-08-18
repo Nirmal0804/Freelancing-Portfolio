@@ -64,6 +64,7 @@ export const ServicesPreview: React.FC = () => {
           <Link
             key={service.number}
             href={service.href}
+            prefetch={true}
             className={`group p-6 sm:p-8 lg:p-10 flex flex-col justify-between hover:bg-primary/[0.03] transition-colors duration-200 min-h-[380px] lg:min-h-[440px] ${
               idx !== 0 ? "lg:border-l border-[#cdc5c2]" : ""
             } ${idx % 2 === 1 ? "md:border-l lg:border-l-0" : ""} ${

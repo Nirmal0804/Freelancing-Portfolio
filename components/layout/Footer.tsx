@@ -22,16 +22,16 @@ export const Footer: React.FC = () => {
             Navigation
           </h5>
           <nav className="flex flex-col gap-2.5 font-sans text-sm">
-            <Link href="/" className="text-on-surface hover:text-primary transition-colors">
+            <Link href="/" prefetch={true} className="text-on-surface hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="/services" className="text-on-surface hover:text-primary transition-colors">
+            <Link href="/services" prefetch={true} className="text-on-surface hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="/work" className="text-on-surface hover:text-primary transition-colors">
+            <Link href="/work" prefetch={true} className="text-on-surface hover:text-primary transition-colors">
               Works
             </Link>
-            <Link href="/contact" className="text-on-surface hover:text-primary transition-colors">
+            <Link href="/contact" prefetch={true} className="text-on-surface hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>

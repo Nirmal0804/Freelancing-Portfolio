@@ -59,6 +59,7 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 href={link.href}
+                prefetch={true}
                 className={cn(
                   "transition-colors duration-200 py-1 font-medium",
                   isActive
@@ -76,6 +77,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center">
           <Link
             href="/contact"
+            prefetch={true}
             className="inline-flex items-center gap-1.5 bg-primary text-on-primary font-sans font-medium text-xs uppercase tracking-wider px-5 py-2.5 border border-primary hover:bg-transparent hover:text-primary transition-all duration-200 active:scale-[0.98]"
           >
             <span>Let&apos;s Talk</span>
@@ -115,6 +117,7 @@ export const Navbar: React.FC = () => {
               <div className="flex items-center justify-between pb-5 border-b border-[#cdc5c2]">
                 <Link
                   href="/"
+                  prefetch={true}
                   onClick={() => setMobileMenuOpen(false)}
                   className="font-heading text-base sm:text-lg font-semibold text-on-surface uppercase tracking-tight hover:text-primary transition-colors"
                 >
@@ -137,6 +140,7 @@ export const Navbar: React.FC = () => {
                     <Link
                       key={link.name}
                       href={link.href}
+                      prefetch={true}
                       onClick={() => setMobileMenuOpen(false)}
                       className={cn(
                         "transition-colors font-semibold uppercase tracking-wider flex items-center justify-between py-1",
@@ -155,6 +159,7 @@ export const Navbar: React.FC = () => {
             <div className="pt-6 border-t border-[#cdc5c2] flex flex-col gap-4">
               <Link
                 href="/contact"
+                prefetch={true}
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full inline-flex items-center justify-center gap-2 bg-on-surface text-[#fcf9f8] font-sans font-medium text-xs uppercase tracking-wider py-3.5 border border-on-surface hover:bg-primary hover:border-primary hover:text-white transition-colors"
               >

@@ -42,6 +42,7 @@ export default async function WorkPage() {
         </p>
         <Link
           href="/contact"
+          prefetch={true}
           className="inline-flex items-center gap-2 bg-primary text-on-primary font-sans font-medium text-xs uppercase tracking-wider px-7 py-3.5 border border-primary hover:bg-transparent hover:text-primary transition-all duration-200 group mt-2"
         >
           <span>START A PROJECT</span>

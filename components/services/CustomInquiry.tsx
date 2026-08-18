@@ -20,6 +20,7 @@ export const CustomInquiry: React.FC = () => {
         </h2>
         <Link
           href="/contact"
+          prefetch={true}
           className="group inline-flex items-center gap-2 font-sans font-medium text-xs text-on-primary bg-primary px-6 py-3 border border-primary hover:bg-transparent hover:text-primary transition-all duration-200 mt-2 uppercase tracking-wider"
         >
           <span>Let&apos;s Talk</span>
