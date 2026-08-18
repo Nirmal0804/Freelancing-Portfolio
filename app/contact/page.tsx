@@ -13,13 +13,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <PageContainer usePadding className="py-12 sm:py-16 lg:py-20 flex flex-col gap-10 sm:gap-14 lg:gap-16">
-      {/* Header */}
-      <header className="max-w-3xl flex flex-col gap-3">
-        <p className="font-sans text-xs uppercase tracking-widest text-primary font-semibold">
-          CONTACT &amp; ENQUIRIES
-        </p>
-        <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-on-surface font-semibold tracking-tight">
-          Start a project.
+      {/* Introductory Header - Centered Warm Orange */}
+      <header className="w-full flex flex-col items-center justify-center text-center max-w-3xl mx-auto gap-4">
+        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
+          LET&apos;S WORK TOGETHER
         </h1>
         <p className="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed">
           Tell me about your goals, timeline, and vision. Let&apos;s collaborate to craft something memorable and effective.
