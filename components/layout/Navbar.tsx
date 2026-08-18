@@ -35,7 +35,7 @@ export const Navbar: React.FC = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <nav className="bg-background/95 backdrop-blur-md border-b border-[#cdc5c2] w-full top-0 sticky z-50">
+    <nav className="bg-[#fcf9f8]/95 backdrop-blur-md border-b border-[#cdc5c2] w-full top-0 sticky z-50">
       <div className="max-w-[1360px] mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-12 h-20">
         {/* Brand */}
         <Link
@@ -91,9 +91,13 @@ export const Navbar: React.FC = () => {
       {/* Mobile Right Slide-Over Drawer Menu (75vw with 25% blurred backdrop) */}
       {mobileMenuOpen && (
         <div className="md:hidden">
-          {/* Heavily Blurred & Slightly Darkened Left 25% Backdrop */}
+          {/* Heavily Blurred & Darkened Backdrop covering existing page */}
           <div
-            className="fixed inset-0 bg-black/40 backdrop-blur-md z-[90] transition-opacity"
+            className="fixed inset-0 bg-black/40 z-[90] transition-opacity duration-300"
+            style={{
+              backdropFilter: "blur(16px)",
+              WebkitBackdropFilter: "blur(16px)",
+            }}
             onClick={() => setMobileMenuOpen(false)}
             aria-hidden="true"
           />
