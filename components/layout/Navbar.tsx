@@ -93,13 +93,13 @@ export const Navbar: React.FC = () => {
         <div className="md:hidden">
           {/* Dimmed Backdrop */}
           <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 transition-opacity"
+            className="fixed inset-0 bg-black/60 z-[90] transition-opacity"
             onClick={() => setMobileMenuOpen(false)}
             aria-hidden="true"
           />
 
-          {/* Slide-over Drawer Panel */}
-          <div className="fixed top-0 right-0 bottom-0 w-[82%] max-w-[340px] bg-background border-l border-[#cdc5c2] shadow-2xl z-50 flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
+          {/* Solid Slide-over Drawer Panel */}
+          <div className="fixed top-0 right-0 bottom-0 w-[82%] max-w-[340px] bg-[#fcf9f8] border-l border-[#cdc5c2] shadow-2xl z-[100] flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
             <div>
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-5 border-b border-[#cdc5c2]">
@@ -146,7 +146,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full inline-flex items-center justify-center gap-2 bg-on-surface text-background font-sans font-medium text-xs uppercase tracking-wider py-3.5 border border-on-surface hover:bg-primary hover:border-primary hover:text-white transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 bg-on-surface text-[#fcf9f8] font-sans font-medium text-xs uppercase tracking-wider py-3.5 border border-on-surface hover:bg-primary hover:border-primary hover:text-white transition-colors"
               >
                 <span>Let&apos;s Talk</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
