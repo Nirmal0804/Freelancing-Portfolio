@@ -11,7 +11,7 @@ export const CustomInquiry: React.FC = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-start gap-4 sm:gap-6 bg-surface-container-low/80 p-6 sm:p-8 lg:p-10 border border-[#E5E2E1]">
+      <div className="flex flex-col items-start gap-4 sm:gap-6 bg-surface-container-low/80 p-6 sm:p-8 lg:p-10 border border-[#cdc5c2]">
         <span className="font-sans font-semibold text-xs text-primary uppercase tracking-widest">
           Need something different?
         </span>

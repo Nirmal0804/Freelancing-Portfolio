@@ -42,11 +42,11 @@ const PILLARS = [
 export const WhyCraftedWeb: React.FC = () => {
   return (
     <section
-      className="w-full border-b border-[#E5E2E1] bg-surface-container-lowest"
+      className="w-full border-b border-[#cdc5c2] bg-surface-container-lowest"
       id="why-crafted-web"
     >
       {/* Centered Warm Orange Section Header */}
-      <div className="p-6 sm:p-8 lg:p-12 border-b border-[#E5E2E1] flex justify-center items-center text-center">
+      <div className="p-6 sm:p-8 lg:p-12 border-b border-[#cdc5c2] flex justify-center items-center text-center">
         <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
           WHY CRAFTED WEB
         </h2>
@@ -59,17 +59,17 @@ export const WhyCraftedWeb: React.FC = () => {
             key={pillar.number}
             className={`group p-6 sm:p-8 lg:p-10 flex flex-col justify-between hover:bg-primary/[0.03] transition-colors duration-200 min-h-[220px] lg:min-h-[250px] ${
               /* Mobile bottom borders for items 0-4 */
-              idx < 5 ? "border-b border-[#E5E2E1] sm:border-b-0" : ""
+              idx < 5 ? "border-b border-[#cdc5c2] sm:border-b-0" : ""
             } ${
               /* Tablet 2-column borders */
-              idx % 2 === 0 ? "sm:border-r border-[#E5E2E1] lg:border-r-0" : ""
+              idx % 2 === 0 ? "sm:border-r border-[#cdc5c2] lg:border-r-0" : ""
             } ${
-              idx < 4 ? "sm:border-b border-[#E5E2E1] lg:border-b-0" : ""
+              idx < 4 ? "sm:border-b border-[#cdc5c2] lg:border-b-0" : ""
             } ${
               /* Desktop 3-column borders */
-              idx % 3 !== 2 ? "lg:border-r border-[#E5E2E1]" : ""
+              idx % 3 !== 2 ? "lg:border-r border-[#cdc5c2]" : ""
             } ${
-              idx < 3 ? "lg:border-b border-[#E5E2E1]" : ""
+              idx < 3 ? "lg:border-b border-[#cdc5c2]" : ""
             }`}
           >
             <div>

@@ -142,7 +142,7 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-[#E5E2E1] border border-[#E5E2E1] bg-background">
+    <div className="grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-[#cdc5c2] border border-[#cdc5c2] bg-background">
       {/* Left Column: Contact Details (Warm Orange Accent Panel) */}
       <div className="md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between space-y-10 bg-primary text-white">
         <div className="space-y-10">
@@ -268,7 +268,7 @@ export const ContactForm: React.FC = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Your full name or studio"
-                  className={`bg-transparent border-0 border-b ${errors.name ? "border-error" : "border-[#E5E2E1]"
+                  className={`bg-transparent border-0 border-b ${errors.name ? "border-error" : "border-[#cdc5c2]"
                     } py-2 font-sans text-sm text-on-surface placeholder-on-surface-variant/40 focus:border-primary focus:outline-none transition-colors`}
                   disabled={isSubmitting}
                 />
@@ -290,7 +290,7 @@ export const ContactForm: React.FC = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="name@company.com"
-                  className={`bg-transparent border-0 border-b ${errors.email ? "border-error" : "border-[#E5E2E1]"
+                  className={`bg-transparent border-0 border-b ${errors.email ? "border-error" : "border-[#cdc5c2]"
                     } py-2 font-sans text-sm text-on-surface placeholder-on-surface-variant/40 focus:border-primary focus:outline-none transition-colors`}
                   disabled={isSubmitting}
                 />
@@ -314,7 +314,7 @@ export const ContactForm: React.FC = () => {
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 placeholder="+91 98765 43210"
-                className="bg-transparent border-0 border-b border-[#E5E2E1] py-2 font-sans text-sm text-on-surface placeholder-on-surface-variant/40 focus:border-primary focus:outline-none transition-colors"
+                className="bg-transparent border-0 border-b border-[#cdc5c2] py-2 font-sans text-sm text-on-surface placeholder-on-surface-variant/40 focus:border-primary focus:outline-none transition-colors"
                 disabled={isSubmitting}
               />
             </div>
@@ -332,7 +332,7 @@ export const ContactForm: React.FC = () => {
                   id="project-type"
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                  className={`bg-transparent border-0 border-b ${errors.projectType ? "border-error" : "border-[#E5E2E1]"
+                  className={`bg-transparent border-0 border-b ${errors.projectType ? "border-error" : "border-[#cdc5c2]"
                     } py-2 font-sans text-sm text-on-surface focus:border-primary focus:outline-none transition-colors cursor-pointer`}
                   disabled={isSubmitting}
                 >
@@ -361,7 +361,7 @@ export const ContactForm: React.FC = () => {
                   id="budget"
                   value={formData.budget}
                   onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                  className="bg-transparent border-0 border-b border-[#E5E2E1] py-2 font-sans text-sm text-on-surface focus:border-primary focus:outline-none transition-colors cursor-pointer"
+                  className="bg-transparent border-0 border-b border-[#cdc5c2] py-2 font-sans text-sm text-on-surface focus:border-primary focus:outline-none transition-colors cursor-pointer"
                   disabled={isSubmitting}
                 >
                   <option value="" className="bg-background text-on-surface-variant">
@@ -390,7 +390,7 @@ export const ContactForm: React.FC = () => {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Tell us about your project goals, scope, and timeline..."
-                className={`bg-transparent border-0 border-b ${errors.message ? "border-error" : "border-[#E5E2E1]"
+                className={`bg-transparent border-0 border-b ${errors.message ? "border-error" : "border-[#cdc5c2]"
                   } py-2 font-sans text-sm text-on-surface placeholder-on-surface-variant/40 focus:border-primary focus:outline-none resize-none transition-colors`}
                 disabled={isSubmitting}
               />

@@ -24,15 +24,15 @@ export default function ServicesPage() {
       </header>
 
       {/* 2x2 Editorial Grid on Desktop / Single Column Stack on Mobile */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-[#E5E2E1] border border-[#E5E2E1] bg-background">
+      <section className="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-[#cdc5c2] border border-[#cdc5c2] bg-background">
         {/* Left Column: Service 01 & 03 */}
-        <div className="flex flex-col divide-y divide-[#E5E2E1]">
+        <div className="flex flex-col divide-y divide-[#cdc5c2]">
           <ServiceCard service={servicesData[0]} />
           <ServiceCard service={servicesData[2]} />
         </div>
 
         {/* Right Column: Service 02 & 04 */}
-        <div className="flex flex-col divide-y divide-[#E5E2E1]">
+        <div className="flex flex-col divide-y divide-[#cdc5c2]">
           <ServiceCard service={servicesData[1]} />
           <ServiceCard service={servicesData[3]} />
         </div>

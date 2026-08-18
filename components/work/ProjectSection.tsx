@@ -60,7 +60,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
                 {project.description}
               </p>
 
-              <div className="border-t border-[#E5E2E1] pt-5 mb-6 sm:mb-8">
+              <div className="border-t border-[#cdc5c2] pt-5 mb-6 sm:mb-8">
                 <p className="font-sans text-xs uppercase tracking-wider text-tertiary font-semibold mb-1.5">
                   SERVICES
                 </p>

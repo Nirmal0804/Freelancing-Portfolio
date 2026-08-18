@@ -48,24 +48,24 @@ const SERVICES: ServiceColumn[] = [
 export const ServicesPreview: React.FC = () => {
   return (
     <section
-      className="w-full border-b border-[#E5E2E1] bg-surface-container-lowest"
+      className="w-full border-b border-[#cdc5c2] bg-surface-container-lowest"
       id="services"
     >
       {/* Editorial Section Header - Centered Warm Orange */}
-      <div className="p-6 sm:p-8 lg:p-12 border-b border-[#E5E2E1] flex justify-center items-center text-center">
+      <div className="p-6 sm:p-8 lg:p-12 border-b border-[#cdc5c2] flex justify-center items-center text-center">
         <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
           WHAT I CAN HELP YOU WITH
         </h2>
       </div>
 
       {/* 4-Column Continuous Editorial Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 divide-[#E5E2E1]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 divide-[#cdc5c2]">
         {SERVICES.map((service, idx) => (
           <Link
             key={service.number}
             href={service.href}
             className={`group p-6 sm:p-8 lg:p-10 flex flex-col justify-between hover:bg-primary/[0.03] transition-colors duration-200 min-h-[380px] lg:min-h-[440px] ${
-              idx !== 0 ? "lg:border-l border-[#E5E2E1]" : ""
+              idx !== 0 ? "lg:border-l border-[#cdc5c2]" : ""
             } ${idx % 2 === 1 ? "md:border-l lg:border-l-0" : ""} ${
               idx >= 2 ? "md:border-t lg:border-t-0" : ""
             }`}
@@ -89,7 +89,7 @@ export const ServicesPreview: React.FC = () => {
             </div>
 
             {/* Bottom Footer: Price & Arrow */}
-            <div className="mt-8 pt-5 border-t border-[#E5E2E1]/70 flex items-end justify-between gap-2">
+            <div className="mt-8 pt-5 border-t border-[#cdc5c2]/70 flex items-end justify-between gap-2">
               <div className="flex flex-col">
                 <span className="font-sans text-[11px] text-on-surface-variant uppercase tracking-wider mb-0.5">
                   Starting at
@@ -98,7 +98,7 @@ export const ServicesPreview: React.FC = () => {
                   {service.price}
                 </span>
               </div>
-              <div className="w-8 h-8 rounded-full border border-[#E5E2E1] flex items-center justify-center text-on-surface-variant group-hover:border-primary group-hover:text-primary transition-all duration-200 shrink-0 mb-0.5">
+              <div className="w-8 h-8 rounded-full border border-[#cdc5c2] flex items-center justify-center text-on-surface-variant group-hover:border-primary group-hover:text-primary transition-all duration-200 shrink-0 mb-0.5">
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
               </div>
             </div>

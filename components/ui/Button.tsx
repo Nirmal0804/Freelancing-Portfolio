@@ -25,7 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
     primary:
       "bg-primary text-on-primary border border-primary hover:bg-transparent hover:text-primary",
     secondary:
-      "bg-surface-container-high text-on-surface border border-[#E5E2E1] hover:border-primary hover:text-primary",
+      "bg-surface-container-high text-on-surface border border-[#cdc5c2] hover:border-primary hover:text-primary",
     outline:
       "bg-transparent text-primary border border-primary hover:bg-primary hover:text-on-primary",
     ghost:

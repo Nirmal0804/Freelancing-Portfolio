@@ -5,7 +5,7 @@ import { ArrowUpRight } from "@/components/ui/Icons";
 export const CtaSection: React.FC = () => {
   return (
     <section
-      className="w-full border-t border-[#E5E2E1] py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-12 bg-background"
+      className="w-full border-t border-[#cdc5c2] py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-12 bg-background"
       id="contact"
     >
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center gap-4 sm:gap-6">

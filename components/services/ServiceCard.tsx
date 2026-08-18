@@ -30,7 +30,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h3 className="font-sans font-semibold text-xs text-primary uppercase tracking-widest border-b border-[#E5E2E1] pb-2">
+          <h3 className="font-sans font-semibold text-xs text-primary uppercase tracking-widest border-b border-[#cdc5c2] pb-2">
             What you get
           </h3>
           <ul className="flex flex-col gap-2 font-sans text-sm text-on-surface-variant mt-1">
@@ -46,7 +46,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         </div>
       </div>
 
-      <div className="mt-8 pt-6 border-t border-[#E5E2E1] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div className="mt-8 pt-6 border-t border-[#cdc5c2] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <span className="font-sans text-xs text-on-surface-variant">
           Starting <span className="font-heading text-sm text-on-surface font-semibold">{service.startingPrice}</span>
         </span>

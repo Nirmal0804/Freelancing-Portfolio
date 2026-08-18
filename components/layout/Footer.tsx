@@ -4,8 +4,8 @@ import { ArrowUpRight } from "@/components/ui/Icons";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-surface-container-highest border-t border-[#E5E2E1] w-full mt-auto">
-      <div className="max-w-[1360px] mx-auto grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-[#E5E2E1]">
+    <footer className="bg-surface-container-highest border-t border-[#cdc5c2] w-full mt-auto">
+      <div className="max-w-[1360px] mx-auto grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-[#cdc5c2]">
         {/* Column 1: Brand */}
         <div className="md:col-span-3 p-6 sm:p-8 lg:p-10 flex flex-col gap-4">
           <div className="font-heading text-xl font-semibold text-on-surface uppercase tracking-tight">
@@ -96,7 +96,7 @@ export const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#E5E2E1] px-4 sm:px-6 md:px-8 lg:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-3 font-sans text-xs text-on-surface-variant max-w-[1360px] mx-auto w-full">
+      <div className="border-t border-[#cdc5c2] px-4 sm:px-6 md:px-8 lg:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-3 font-sans text-xs text-on-surface-variant max-w-[1360px] mx-auto w-full">
         <span>© 2026 Crafted Web</span>
         <a
           href="https://github.com/Nirmal0804"

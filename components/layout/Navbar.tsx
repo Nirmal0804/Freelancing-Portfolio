@@ -35,7 +35,7 @@ export const Navbar: React.FC = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <nav className="bg-background/95 backdrop-blur-md border-b border-[#E5E2E1] w-full top-0 sticky z-50">
+    <nav className="bg-background/95 backdrop-blur-md border-b border-[#cdc5c2] w-full top-0 sticky z-50">
       <div className="max-w-[1360px] mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-12 h-20">
         {/* Brand */}
         <Link
@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-background border-t border-[#E5E2E1] flex flex-col justify-between p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-background border-t border-[#cdc5c2] flex flex-col justify-between p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="flex flex-col gap-5 pt-4 font-sans text-base">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href;
@@ -99,7 +99,7 @@ export const Navbar: React.FC = () => {
                   key={link.name}
                   href={link.href}
                   className={cn(
-                    "py-3 border-b border-[#E5E2E1]/60 transition-colors flex items-center justify-between font-medium",
+                    "py-3 border-b border-[#cdc5c2]/60 transition-colors flex items-center justify-between font-medium",
                     isActive ? "text-primary font-semibold" : "text-on-surface hover:text-primary"
                   )}
                 >

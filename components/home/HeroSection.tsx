@@ -3,7 +3,7 @@ import React from "react";
 export const HeroSection: React.FC = () => {
   return (
     <section
-      className="relative w-full border-b border-[#E5E2E1] bg-background min-h-[82vh] lg:min-h-[88vh] flex flex-col justify-between overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12 pt-8 sm:pt-12 pb-8 sm:pb-12"
+      className="relative w-full border-b border-[#cdc5c2] bg-background min-h-[82vh] lg:min-h-[88vh] flex flex-col justify-between overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12 pt-8 sm:pt-12 pb-8 sm:pb-12"
       aria-label="Hero Section"
     >
       {/* Subtle Warm Ambient Glow behind the reserved central portrait area */}
@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
       <div className="relative w-full my-auto py-6 sm:py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 items-center gap-6 sm:gap-8 z-20">
         {/* Left: Availability Badge */}
         <div className="lg:col-span-4 flex justify-start items-center">
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-lowest border border-[#E5E2E1] shadow-xs">
+          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-lowest border border-[#cdc5c2] shadow-xs">
             <span className="w-2 h-2 rounded-full bg-primary shrink-0 animate-pulse" />
             <span className="font-sans text-xs font-medium text-on-surface tracking-normal">
               Available for new opportunities

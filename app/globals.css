@@ -7,11 +7,11 @@
     --background: #fcf9f8;
     --foreground: #1c1b1b;
     --primary: #a83300;
-    --border: #e5e2e1;
+    --border: #cdc5c2;
     --muted: #59413a;
     --surface-low: #f6f3f2;
     --surface-high: #eae7e7;
-    --surface-highest: #e5e2e1;
+    --surface-highest: #cdc5c2;
   }
 
   body {
@@ -26,7 +26,7 @@
     background: #fcf9f8;
   }
   ::-webkit-scrollbar-thumb {
-    background: #e5e2e1;
+    background: #cdc5c2;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #a83300;
@@ -39,6 +39,6 @@
   }
 
   .editorial-border {
-    border-color: #e5e2e1;
+    border-color: #cdc5c2;
   }
 }

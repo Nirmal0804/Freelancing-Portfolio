@@ -30,7 +30,7 @@ export default async function WorkPage() {
       <ProjectSection projects={projects} />
 
       {/* Thin Editorial Divider below final project (Apex Gym) */}
-      <div className="w-full border-b border-[#E5E2E1] mt-16 sm:mt-20 lg:mt-24" />
+      <div className="w-full border-b border-[#cdc5c2] mt-16 sm:mt-20 lg:mt-24" />
 
       {/* Bottom CTA with Refined Editorial Vertical Spacing */}
       <section className="pt-12 sm:pt-16 lg:pt-20 pb-4 sm:pb-6 text-center max-w-3xl mx-auto flex flex-col items-center gap-4 sm:gap-6">

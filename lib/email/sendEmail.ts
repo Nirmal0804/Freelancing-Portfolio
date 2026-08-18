@@ -75,8 +75,8 @@ Message:
 ${submission.message}`;
 
     const htmlContent = `
-      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1c1b1b; line-height: 1.6; background-color: #fcf9f8; padding: 24px; border: 1px solid #e5e2e1;">
-        <h2 style="color: #a83300; margin-top: 0; padding-bottom: 12px; border-bottom: 1px solid #e5e2e1; font-size: 20px;">
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1c1b1b; line-height: 1.6; background-color: #fcf9f8; padding: 24px; border: 1px solid #cdc5c2;">
+        <h2 style="color: #a83300; margin-top: 0; padding-bottom: 12px; border-bottom: 1px solid #cdc5c2; font-size: 20px;">
           New Crafted Web Enquiry
         </h2>
         <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
@@ -106,14 +106,14 @@ ${submission.message}`;
           </tr>
         </table>
         
-        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e5e2e1;">
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #cdc5c2;">
           <h3 style="font-size: 15px; color: #59413a; margin-bottom: 8px;">Message:</h3>
-          <div style="background-color: #ffffff; padding: 16px; border: 1px solid #e5e2e1; border-left: 3px solid #a83300; white-space: pre-wrap; font-size: 14px; color: #1c1b1b;">
+          <div style="background-color: #ffffff; padding: 16px; border: 1px solid #cdc5c2; border-left: 3px solid #a83300; white-space: pre-wrap; font-size: 14px; color: #1c1b1b;">
             ${escapeHtml(submission.message)}
           </div>
         </div>
         
-        <p style="margin-top: 24px; font-size: 12px; color: #8d7168; border-top: 1px solid #e5e2e1; padding-top: 12px;">
+        <p style="margin-top: 24px; font-size: 12px; color: #8d7168; border-top: 1px solid #cdc5c2; padding-top: 12px;">
           Reply directly to this email to respond to ${escapeHtml(submission.name)} (${escapeHtml(submission.email)}).
         </p>
       </div>

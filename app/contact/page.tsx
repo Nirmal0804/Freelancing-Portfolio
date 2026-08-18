@@ -26,7 +26,7 @@ export default function ContactPage() {
       {/* Two-Column Editorial Contact Grid */}
       <Suspense
         fallback={
-          <div className="p-16 border border-[#E5E2E1] flex items-center justify-center">
+          <div className="p-16 border border-[#cdc5c2] flex items-center justify-center">
             <Loader2 className="w-8 h-8 text-primary animate-spin" />
           </div>
         }
