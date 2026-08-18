@@ -1,0 +1,374 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Crafted Web - Independent Creative Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#313030",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-container": "#fffbff",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary-fixed-dim": "#c9c6bf",
+                    "secondary-fixed-dim": "#c8c6c2",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#832600",
+                    "tertiary": "#5d5c56",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#feffda",
+                    "on-surface": "#1c1b1b",
+                    "surface-container-high": "#eae7e7",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-tertiary-fixed": "#1c1c17",
+                    "inverse-on-surface": "#f3f0ef",
+                    "primary-fixed-dim": "#ffb59d",
+                    "on-secondary-fixed": "#1b1c19",
+                    "outline-variant": "#e1bfb5",
+                    "on-secondary-container": "#63635f",
+                    "on-tertiary-fixed-variant": "#474741",
+                    "primary": "#a83300",
+                    "on-surface-variant": "#59413a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-background": "#1c1b1b",
+                    "tertiary-container": "#76756e",
+                    "primary-fixed": "#ffdbd0",
+                    "surface-variant": "#e5e2e1",
+                    "outline": "#8d7168",
+                    "error": "#ba1a1a",
+                    "background": "#fcf9f8",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#e5e2da",
+                    "surface-container": "#f0eded",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#e1dfdb",
+                    "on-primary-fixed": "#390c00",
+                    "on-primary": "#ffffff",
+                    "secondary": "#5e5e5b",
+                    "on-secondary-fixed-variant": "#474744",
+                    "primary-container": "#cc4916",
+                    "inverse-primary": "#ffb59d",
+                    "surface-tint": "#ac3500",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "24px",
+                    "grid-gutter": "1px",
+                    "unit": "8px",
+                    "grid-margin": "40px",
+                    "section-padding": "80px",
+                    "stack-lg": "48px",
+                    "stack-sm": "12px"
+            },
+            "fontFamily": {
+                    "label-caps": [
+                            "Hanken Grotesk"
+                    ],
+                    "display-xl": [
+                            "Hanken Grotesk"
+                    ],
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "metadata": [
+                            "Hanken Grotesk"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-lg-mobile": [
+                            "Hanken Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-xl": [
+                            "120px",
+                            {
+                                    "lineHeight": "110px",
+                                    "letterSpacing": "-0.04em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "0em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "metadata": [
+                            "13px",
+                            {
+                                    "lineHeight": "18px",
+                                    "letterSpacing": "0em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "30px",
+                                    "letterSpacing": "0em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "44px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        /* Custom styles for grid dividers */
+        .editorial-border {
+            border-color: #E0DDD5; /* Fallback if utility classes miss */
+        }
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline flex justify-between items-center px-grid-margin py-stack-sm w-full top-0 sticky z-50">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors duration-300">
+            Crafted Web
+        </div>
+<div class="hidden md:flex items-center gap-stack-md font-label-caps text-label-caps uppercase tracking-wider">
+<a class="text-primary dark:text-primary-fixed-dim border-b border-primary pb-1" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#work">Work</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<a class="hidden md:inline-flex bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 border border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 scale-95 duration-200" href="#contact">
+            Let's Talk
+        </a>
+<!-- Mobile Menu Button Placeholder -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="flex-grow flex flex-col">
+<!-- Hero - TBD -->
+<section class="w-full border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 min-h-[60vh] bg-surface-container-lowest">
+<div class="md:col-span-8 p-grid-margin flex flex-col justify-center border-b md:border-b-0 md:border-r border-outline-variant"></div>
+<div class="md:col-span-4 p-grid-margin flex flex-col justify-end"></div>
+</section>
+<!-- About -->
+<section class="w-full border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 bg-surface-container-highest" id="about"><div class="md:col-span-12 p-grid-margin border-b border-outline-variant">
+<h2 class="font-label-caps text-label-caps uppercase text-on-surface-variant">About</h2>
+</div>
+<div class="md:col-span-12 p-grid-margin flex flex-col md:flex-row gap-grid-margin">
+<div class="w-full md:w-64 shrink-0 order-2">
+<img alt="Portrait of Nirmal, founder of Crafted Web" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmnH217XjgxwW5wL7JLYEeTEz-WDX0Rr84ZvdEr4aOksjJsE-WbQmX1Hdj-aPzjyn3F6V2ru3HoeSxol_lqxF6qFIH3HtRk3P7iJvC0A0WSOMhhw1sEVlaGYUcxQzHAL0Sa-HxDOWmAtnHHuEH_VB-yy1h_dDeHy9IpNHFsDXatWUySKBNuqX4XNAfgoCo2zlRZtw4cAN3xpsn9chEEpuQrQ630bkNBMa42LszimmUqGeicCS9folJqWF244Caq-UwC-o">
+</div>
+<div class="flex-1 order-1">
+<p class="font-headline-md text-headline-md mb-stack-md">Crafted Web is an independent digital studio founded by Nirmal, focused on delivering high-end, bespoke web solutions for creatives and ambitious brands.</p>
+</div>
+</div></section>
+<!-- Services -->
+<section class="w-full border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 bg-surface-container-lowest" id="services">
+<div class="md:col-span-4 p-grid-margin border-b md:border-b-0 md:border-r border-outline-variant">
+<h2 class="font-label-caps text-label-caps uppercase text-on-surface-variant sticky top-32">Services</h2>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-outline-variant">
+<!-- Row 1 -->
+<div class="flex flex-col divide-y divide-outline-variant">
+<!-- Card 01 -->
+<div class="p-grid-margin hover:bg-primary/5 transition-colors group cursor-pointer flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-stack-md">
+<span class="font-metadata text-metadata text-primary">01</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">north_east</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-stack-sm">WEB DEVELOPMENT</h3>
+<p class="font-body-md text-on-surface-variant">Websites built around your business, with responsive layouts, strong performance, and a polished user experience.</p>
+</div>
+<div class="mt-stack-md pt-4 border-t border-outline-variant/30">
+<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Starting from <span class="text-on-surface font-bold">₹4,499+</span></span>
+</div>
+</div>
+<!-- Card 03 -->
+<div class="p-grid-margin hover:bg-primary/5 transition-colors group cursor-pointer flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-stack-md">
+<span class="font-metadata text-metadata text-primary">03</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">north_east</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-stack-sm">LOGO DESIGN</h3>
+<p class="font-body-md text-on-surface-variant">Simple, memorable visual identities that give your brand a distinct character.</p>
+</div>
+<div class="mt-stack-md pt-4 border-t border-outline-variant/30">
+<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Starting from <span class="text-on-surface font-bold">₹199+</span></span>
+</div>
+</div>
+</div>
+<!-- Row 2 (Column 2 on Desktop) -->
+<div class="flex flex-col divide-y divide-outline-variant">
+<!-- Card 02 -->
+<div class="p-grid-margin hover:bg-primary/5 transition-colors group cursor-pointer flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-stack-md">
+<span class="font-metadata text-metadata text-primary">02</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">north_east</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-stack-sm">WEB DESIGN</h3>
+<p class="font-body-md text-on-surface-variant">Thoughtful interfaces and visual systems designed around your brand and audience.</p>
+</div>
+<div class="mt-stack-md pt-4 border-t border-outline-variant/30">
+<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Starting from <span class="text-on-surface font-bold">₹1,499+</span></span>
+</div>
+</div>
+<!-- Card 04 -->
+<div class="p-grid-margin hover:bg-primary/5 transition-colors group cursor-pointer flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-stack-md">
+<span class="font-metadata text-metadata text-primary">04</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">north_east</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-stack-sm">PORTFOLIO DEVELOPMENT</h3>
+<p class="font-body-md text-on-surface-variant">Personal portfolios designed to present your work, skills, and personality professionally.</p>
+</div>
+<div class="mt-stack-md pt-4 border-t border-outline-variant/30">
+<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Starting from <span class="text-on-surface font-bold">₹1,499+</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process -->
+<section class="w-full border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 bg-surface-container-highest">
+<div class="md:col-span-12 p-grid-margin border-b border-outline-variant">
+<h2 class="font-label-caps text-label-caps uppercase text-on-surface-variant">The Process</h2>
+</div>
+<div class="md:col-span-12 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-outline-variant">
+<div class="flex-1 p-grid-margin">
+<span class="font-metadata text-metadata text-on-surface-variant block mb-2">01</span>
+<h4 class="font-body-lg text-body-lg">Discover</h4>
+</div>
+<div class="flex-1 p-grid-margin">
+<span class="font-metadata text-metadata text-on-surface-variant block mb-2">02</span>
+<h4 class="font-body-lg text-body-lg">Design</h4>
+</div>
+<div class="flex-1 p-grid-margin">
+<span class="font-metadata text-metadata text-on-surface-variant block mb-2">03</span>
+<h4 class="font-body-lg text-body-lg">Build</h4>
+</div>
+<div class="flex-1 p-grid-margin">
+<span class="font-metadata text-metadata text-on-surface-variant block mb-2">04</span>
+<h4 class="font-body-lg text-body-lg">Refine</h4>
+</div>
+<div class="flex-1 p-grid-margin">
+<span class="font-metadata text-metadata text-on-surface-variant block mb-2">05</span>
+<h4 class="font-body-lg text-body-lg">Launch</h4>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="w-full border-t border-outline-variant py-section-padding px-grid-margin bg-surface-container-lowest" id="contact">
+<div class="flex flex-col items-center text-center gap-stack-md">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Have a project in mind?</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface max-w-3xl">LET'S CRAFT SOMETHING GREAT.</h2>
+<a class="group flex items-center gap-unit font-label-caps text-label-caps uppercase tracking-wider text-primary hover:opacity-80 transition-opacity" href="mailto:craftedweb@zohomail.in">
+      Let's Talk
+      <span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t border-outline-variant w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-outline-variant">
+<div class="md:col-span-3 p-grid-margin flex flex-col gap-stack-sm">
+<div class="font-headline-md text-headline-md font-bold text-on-surface uppercase">Crafted Web</div>
+<p class="font-metadata text-metadata text-on-surface-variant">Independent digital studio focusing on premium, editorial web experiences.</p>
+</div>
+<div class="md:col-span-3 p-grid-margin flex flex-col gap-stack-sm">
+<h5 class="font-label-caps text-label-caps uppercase text-on-surface-variant">Navigation</h5>
+<nav class="flex flex-col gap-unit font-metadata text-metadata">
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#work">Work</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+</div>
+<div class="md:col-span-3 p-grid-margin flex flex-col gap-stack-sm">
+<h5 class="font-label-caps text-label-caps uppercase text-on-surface-variant">Social</h5>
+<nav class="flex flex-col gap-unit font-metadata text-metadata">
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">GitHub</a>
+</nav>
+</div>
+<div class="md:col-span-3 p-grid-margin flex flex-col gap-stack-sm">
+<h5 class="font-label-caps text-label-caps uppercase text-on-surface-variant">Contact</h5>
+<div class="flex flex-col gap-unit font-metadata text-metadata text-on-surface">
+<a class="hover:text-primary transition-colors" href="mailto:craftedweb@zohomail.in">craftedweb@zohomail.in</a>
+<a class="hover:text-primary transition-colors" href="tel:6385626810">6385626810</a>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant px-grid-margin py-4 flex flex-col md:flex-row justify-between items-center gap-4 font-metadata text-metadata text-on-surface-variant">
+<span class="">© 2026 Crafted Web</span>
+<a class="flex items-center gap-unit hover:text-primary transition-colors" href="#">
+      Crafted by Nirmal
+      <span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</footer>
+
+
+</body></html>
