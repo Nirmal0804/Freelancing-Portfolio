@@ -25,13 +25,13 @@ export const AboutSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-[210px] sm:max-w-[240px] lg:max-w-[260px] shrink-0 self-center lg:self-start lg:-mt-3.5">
+        <div className="w-full max-w-[180px] sm:max-w-[210px] lg:max-w-[230px] shrink-0 self-center lg:self-start lg:-mt-2">
           <div className="relative aspect-[4/5] w-full overflow-hidden border border-[#cdc5c2] bg-surface-container-low shadow-xs">
             <Image
               src="/images/nirmal-portrait.jpg"
               alt="Portrait of Nirmal, founder of Crafted Web"
               fill
-              sizes="(max-width: 768px) 210px, (max-width: 1024px) 240px, 260px"
+              sizes="(max-width: 768px) 180px, (max-width: 1024px) 210px, 230px"
               className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 ease-out"
             />
           </div>
