@@ -16,13 +16,10 @@ export default async function WorkPage() {
 
   return (
     <PageContainer usePadding className="py-12 sm:py-16 lg:py-20 flex flex-col">
-      {/* Header */}
-      <header className="mb-14 sm:mb-20 lg:mb-24 max-w-3xl flex flex-col gap-3">
-        <p className="font-sans text-xs uppercase tracking-widest text-primary font-semibold">
-          WORK
-        </p>
-        <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-on-surface font-semibold tracking-tight">
-          Things I&apos;ve built.
+      {/* Introductory Header - Centered Warm Orange */}
+      <header className="mb-14 sm:mb-20 lg:mb-24 w-full flex flex-col items-center justify-center text-center max-w-3xl mx-auto gap-4">
+        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold uppercase tracking-tight leading-tight">
+          WHAT I&apos;VE BUILT
         </h1>
         <p className="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed">
           A selection of websites and digital experiences crafted for different brands, businesses, and purposes.
