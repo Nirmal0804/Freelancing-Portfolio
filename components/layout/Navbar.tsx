@@ -88,39 +88,39 @@ export const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Right Slide-Over Drawer Menu */}
+      {/* Mobile Right Slide-Over Drawer Menu (75vw with 25% blurred backdrop) */}
       {mobileMenuOpen && (
         <div className="md:hidden">
-          {/* Dimmed Backdrop */}
+          {/* Heavily Blurred & Slightly Darkened Left 25% Backdrop */}
           <div
-            className="fixed inset-0 bg-black/60 z-[90] transition-opacity"
+            className="fixed inset-0 bg-black/40 backdrop-blur-md z-[90] transition-opacity"
             onClick={() => setMobileMenuOpen(false)}
             aria-hidden="true"
           />
 
-          {/* Solid Slide-over Drawer Panel */}
-          <div className="fixed top-0 right-0 bottom-0 w-[82%] max-w-[340px] bg-[#fcf9f8] border-l border-[#cdc5c2] shadow-2xl z-[100] flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
+          {/* Solid 75vw Slide-Over Drawer Panel */}
+          <div className="fixed top-0 right-0 bottom-0 w-[75vw] max-w-[320px] bg-[#fcf9f8] border-l border-[#cdc5c2] shadow-2xl z-[100] flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
             <div>
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-5 border-b border-[#cdc5c2]">
                 <Link
                   href="/"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-heading text-lg font-semibold text-on-surface uppercase tracking-tight hover:text-primary transition-colors"
+                  className="font-heading text-base sm:text-lg font-semibold text-on-surface uppercase tracking-tight hover:text-primary transition-colors"
                 >
                   Crafted Web
                 </Link>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="p-1.5 -mr-1 text-on-surface hover:text-primary transition-colors focus:outline-none"
+                  className="p-2 -mr-2 text-on-surface hover:text-primary transition-colors focus:outline-none"
                   aria-label="Close menu"
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
 
-              {/* Navigation Links */}
-              <nav className="flex flex-col gap-6 pt-8 font-sans text-base">
+              {/* Navigation Links (Clean Uppercase) */}
+              <nav className="flex flex-col gap-5 pt-8 font-heading text-base">
                 {NAV_LINKS.map((link) => {
                   const isActive = pathname === link.href;
                   return (
@@ -129,8 +129,8 @@ export const Navbar: React.FC = () => {
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
                       className={cn(
-                        "transition-colors font-medium flex items-center justify-between text-base py-0.5",
-                        isActive ? "text-primary font-semibold" : "text-on-surface hover:text-primary"
+                        "transition-colors font-semibold uppercase tracking-wider flex items-center justify-between py-1",
+                        isActive ? "text-primary font-bold" : "text-on-surface hover:text-primary"
                       )}
                     >
                       <span>{link.name}</span>
