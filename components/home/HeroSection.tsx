@@ -4,7 +4,7 @@ import Image from "next/image";
 export const HeroSection: React.FC = () => {
   return (
     <section
-      className="relative w-full border-b border-[#cdc5c2] bg-background min-h-[75vh] lg:min-h-[84vh] flex flex-col justify-center overflow-hidden px-6 sm:px-10 md:px-14 lg:px-20 py-12 sm:py-16 lg:py-20"
+      className="relative w-full border-b border-[#cdc5c2] bg-background min-h-[70vh] lg:min-h-[78vh] flex flex-col justify-center overflow-hidden px-6 sm:px-10 md:px-14 lg:px-20 pt-6 sm:pt-8 lg:pt-10 pb-10 sm:pb-12 lg:pb-14"
       aria-label="Hero Section"
     >
       <div className="w-full max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
@@ -61,7 +61,7 @@ export const HeroSection: React.FC = () => {
               fill
               priority
               sizes="(max-width: 768px) 320px, (max-width: 1024px) 400px, 440px"
-              className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 ease-out"
+              className="object-cover object-top hover:scale-[1.02] transition-transform duration-500 ease-out"
             />
           </div>
         </div>
