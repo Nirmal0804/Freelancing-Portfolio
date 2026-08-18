@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
               Services
             </Link>
             <Link href="/work" className="text-on-surface hover:text-primary transition-colors">
-              Work
+              Works
             </Link>
             <Link href="/contact" className="text-on-surface hover:text-primary transition-colors">
               Contact
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
               className="text-on-surface hover:text-primary transition-colors flex items-center gap-1 group"
             >
               <span>Instagram</span>
-              <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
             </a>
             <a
               href="https://www.linkedin.com/in/nirmal-p-44645a326/"
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
               className="text-on-surface hover:text-primary transition-colors flex items-center gap-1 group"
             >
               <span>LinkedIn</span>
-              <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
             </a>
             <a
               href="https://github.com/Nirmal0804"
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
               className="text-on-surface hover:text-primary transition-colors flex items-center gap-1 group"
             >
               <span>GitHub</span>
-              <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
             </a>
           </nav>
         </div>
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
               href="tel:+916385626810"
               className="hover:text-primary transition-colors"
             >
-              6385626810
+              +91 6385626810
             </a>
           </div>
         </div>
