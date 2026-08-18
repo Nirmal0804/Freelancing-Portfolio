@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { ArrowUpRight, Check, Loader2, Mail, Phone } from "@/components/ui/Icons";
+import { ArrowUpRight, Check, Loader2, Mail, Phone, Instagram, Linkedin, Github } from "@/components/ui/Icons";
 
 const PROJECT_TYPES = [
   "Web Development",
@@ -178,41 +178,35 @@ export const ContactForm: React.FC = () => {
             <h2 className="font-sans font-semibold text-xs text-white/80 mb-4 uppercase tracking-wider">
               SOCIAL
             </h2>
-            <ul className="space-y-3 font-sans text-sm text-white">
-              <li>
-                <a
-                  href="https://www.instagram.com/crafted_webs/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
-                >
-                  <span>Instagram</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/nirmal-p-44645a326/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
-                >
-                  <span>LinkedIn</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Nirmal0804"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
-                >
-                  <span>GitHub</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-white opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              </li>
-            </ul>
+            <div className="flex items-center gap-4 text-white">
+              <a
+                href="https://www.instagram.com/crafted_webs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-white hover:text-white/70 hover:-translate-y-0.5 transition-all duration-200 p-1 -m-1"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nirmal-p-44645a326/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-white hover:text-white/70 hover:-translate-y-0.5 transition-all duration-200 p-1 -m-1"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://github.com/Nirmal0804"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-white hover:text-white/70 hover:-translate-y-0.5 transition-all duration-200 p-1 -m-1"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 
