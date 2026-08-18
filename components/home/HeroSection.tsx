@@ -61,8 +61,8 @@ export const HeroSection: React.FC = () => {
         {/* Right: Role / Positioning Statement */}
         <div className="flex flex-col justify-end text-left sm:text-right">
           <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-on-surface uppercase tracking-tight leading-[0.92]">
-            <span className="block">WEB DESIGN</span>
-            <span className="block">&amp; DEVELOPMENT</span>
+            <span className="block">WEB DESIGNER</span>
+            <span className="block">&amp; DEVELOPER</span>
           </h2>
         </div>
       </div>
