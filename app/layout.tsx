@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico?v=4", sizes: "32x32" },
+      { url: "/icon.png?v=4", sizes: "512x512", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png?v=4", sizes: "180x180", type: "image/png" },
     ],
   },
 };
@@ -52,6 +52,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sora.variable} ${heebo.variable}`} suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico?v=4" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=4" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon.png?v=4" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4" />
+      </head>
       <body
         className="min-h-screen flex flex-col font-sans bg-background text-on-surface antialiased selection:bg-primary selection:text-white relative"
         suppressHydrationWarning
