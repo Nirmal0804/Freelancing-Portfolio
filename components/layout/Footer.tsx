@@ -14,12 +14,12 @@ export const Footer: React.FC = () => {
             prefetch={true}
             className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-none w-fit"
           >
-            <div className="relative w-8 h-8 shrink-0">
+            <div className="relative w-9 h-9 sm:w-10 sm:h-10 shrink-0">
               <Image
                 src="/images/cw-logo.png"
                 alt="CW Logo"
                 fill
-                sizes="32px"
+                sizes="(max-width: 640px) 36px, 40px"
                 className="object-contain"
               />
             </div>

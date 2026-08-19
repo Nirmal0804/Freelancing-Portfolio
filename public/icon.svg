@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="4" fill="#fcf9f8"/>
-  <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="#e1bfb5" stroke-width="1"/>
-  <text x="16" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#a83300" text-anchor="middle">CW</text>
-</svg>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="30" fill="#FCF9F8" stroke="#CDC5C2" stroke-width="2"/>
+      <image href="/images/cw-logo.png" x="8" y="8" width="48" height="48"/>
+    </svg>

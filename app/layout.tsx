@@ -35,8 +35,14 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/images/cw-logo.png",
-    apple: "/images/cw-logo.png",
+    icon: [
+      { url: "/images/cw-favicon.png", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/images/cw-favicon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 

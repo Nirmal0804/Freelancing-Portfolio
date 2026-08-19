@@ -50,12 +50,12 @@ export const Navbar: React.FC = () => {
           prefetch={true}
           className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-none"
         >
-          <div className="relative w-8 h-8 sm:w-9 sm:h-9 shrink-0">
+          <div className="relative w-9 h-9 sm:w-11 sm:h-11 shrink-0">
             <Image
               src="/images/cw-logo.png"
               alt="CW Logo"
               fill
-              sizes="(max-width: 640px) 32px, 36px"
+              sizes="(max-width: 640px) 36px, 44px"
               priority
               className="object-contain"
             />
@@ -135,12 +135,12 @@ export const Navbar: React.FC = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center gap-2.5 group focus-visible:outline-none"
                 >
-                  <div className="relative w-7 h-7 shrink-0">
+                  <div className="relative w-8 h-8 sm:w-9 sm:h-9 shrink-0">
                     <Image
                       src="/images/cw-logo.png"
                       alt="CW Logo"
                       fill
-                      sizes="28px"
+                      sizes="(max-width: 640px) 32px, 36px"
                       className="object-contain"
                     />
                   </div>
