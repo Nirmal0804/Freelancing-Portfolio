@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "@/components/ui/Icons";
 import { cn } from "@/lib/utils";
@@ -43,12 +44,25 @@ export const Navbar: React.FC = () => {
   return (
     <nav className="bg-[#fcf9f8]/95 backdrop-blur-md border-b border-[#cdc5c2] w-full top-0 sticky z-50">
       <div className="max-w-[1360px] mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-12 h-20">
-        {/* Brand */}
+        {/* Brand: [CW LOGO] + Crafted Web */}
         <Link
           href="/"
-          className="font-heading text-xl md:text-2xl font-semibold text-on-surface hover:text-primary transition-colors duration-200 tracking-tight uppercase"
+          prefetch={true}
+          className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-none"
         >
-          Crafted Web
+          <div className="relative w-8 h-8 sm:w-9 sm:h-9 shrink-0">
+            <Image
+              src="/images/cw-logo.png"
+              alt="CW Logo"
+              fill
+              sizes="(max-width: 640px) 32px, 36px"
+              priority
+              className="object-contain"
+            />
+          </div>
+          <span className="font-heading text-xl md:text-2xl font-semibold text-on-surface group-hover:text-primary transition-colors duration-200 tracking-tight uppercase">
+            Crafted Web
+          </span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -113,15 +127,26 @@ export const Navbar: React.FC = () => {
           {/* 100% Solid 75vw Slide-Over Drawer Panel */}
           <div className="fixed top-0 right-0 bottom-0 w-[75vw] max-w-[320px] bg-[#fcf9f8] border-l border-[#cdc5c2] shadow-2xl z-[9999] flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
             <div>
-              {/* Drawer Header */}
+              {/* Drawer Header: [CW LOGO] + Crafted Web */}
               <div className="flex items-center justify-between pb-5 border-b border-[#cdc5c2]">
                 <Link
                   href="/"
                   prefetch={true}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-heading text-base sm:text-lg font-semibold text-on-surface uppercase tracking-tight hover:text-primary transition-colors"
+                  className="flex items-center gap-2.5 group focus-visible:outline-none"
                 >
-                  Crafted Web
+                  <div className="relative w-7 h-7 shrink-0">
+                    <Image
+                      src="/images/cw-logo.png"
+                      alt="CW Logo"
+                      fill
+                      sizes="28px"
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="font-heading text-base sm:text-lg font-semibold text-on-surface uppercase tracking-tight group-hover:text-primary transition-colors">
+                    Crafted Web
+                  </span>
                 </Link>
                 <button
                   onClick={() => setMobileMenuOpen(false)}

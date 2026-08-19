@@ -1,16 +1,32 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Instagram, Linkedin, Github } from "@/components/ui/Icons";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-surface-container-highest border-t border-[#cdc5c2] w-full mt-auto">
       <div className="max-w-[1360px] mx-auto grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-[#cdc5c2]">
-        {/* Column 1: Brand */}
+        {/* Column 1: Brand: [CW LOGO] + Crafted Web */}
         <div className="md:col-span-3 p-6 sm:p-8 lg:p-10 flex flex-col gap-4">
-          <div className="font-heading text-xl font-semibold text-on-surface uppercase tracking-tight">
-            Crafted Web
-          </div>
+          <Link
+            href="/"
+            prefetch={true}
+            className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-none w-fit"
+          >
+            <div className="relative w-8 h-8 shrink-0">
+              <Image
+                src="/images/cw-logo.png"
+                alt="CW Logo"
+                fill
+                sizes="32px"
+                className="object-contain"
+              />
+            </div>
+            <span className="font-heading text-xl font-semibold text-on-surface uppercase tracking-tight group-hover:text-primary transition-colors">
+              Crafted Web
+            </span>
+          </Link>
           <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
             Independent digital studio focusing on premium, editorial web experiences.
           </p>
