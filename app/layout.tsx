@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -66,6 +67,7 @@ export default function RootLayout({
         <main className="flex-grow flex flex-col">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <SpeedInsights />
       </body>
     </html>
   );
